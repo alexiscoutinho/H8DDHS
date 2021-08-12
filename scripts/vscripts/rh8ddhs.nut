@@ -1,8 +1,7 @@
 //-----------------------------------------------------
 Msg("Activating Realism Hard Eight Death's Door Headshot!\n");
 
-DirectorOptions <-
-{
+DirectorOptions <- {
 	ActiveChallenge = 1
 
 	cm_SpecialRespawnInterval = 15
@@ -17,47 +16,35 @@ DirectorOptions <-
 
 	cm_HeadshotOnly = 1
 
-	weaponsToConvert =
-	{
+	weaponsToConvert = {
 		weapon_first_aid_kit = "weapon_pain_pills_spawn"
 		weapon_adrenaline = "weapon_pain_pills_spawn"
 	}
 
-	function ConvertWeaponSpawn( classname )
-	{
-		if ( classname in weaponsToConvert )
-		{
+	function ConvertWeaponSpawn(classname) {
+		if (classname in weaponsToConvert)
 			return weaponsToConvert[classname];
-		}
 		return 0;
 	}
 
-	DefaultItems =
-	[
+	DefaultItems = [
 		"weapon_pistol",
 		"weapon_pistol",
 	]
 
-	function GetDefaultItem( idx )
-	{
-		if ( idx < DefaultItems.len() )
-		{
+	function GetDefaultItem(idx) {
+		if (idx < DefaultItems.len())
 			return DefaultItems[idx];
-		}
 		return 0;
 	}
 
 	TempHealthDecayRate = 0.001
-	function RecalculateHealthDecay()
-	{
-		if ( Director.HasAnySurvivorLeftSafeArea() )
-		{
+	function RecalculateHealthDecay() {
+		if (Director.HasAnySurvivorLeftSafeArea())
 			TempHealthDecayRate = 0.27 // pain_pills_decay_rate default
-		}
 	}
 }
 
-function Update()
-{
+function Update() {
 	DirectorOptions.RecalculateHealthDecay();
 }
