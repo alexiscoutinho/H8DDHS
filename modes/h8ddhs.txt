@@ -1,0 +1,16 @@
+h8ddhs
+{
+	base		coop
+	maxplayers	4
+
+	DisplayTitle		"Hard Eight Death's Door Headshot!"
+	ShortDescription	"Super scary mutation combination now with even scarier hordes!"
+	Description			"Three of the best mutations now combined for an insane experience!"
+	Author	"Jack Bauer ︻デ▬—"
+	Image	vgui/h8ddhs
+
+	convar
+	{
+		survivor_max_incapacitated_count 0
+	}
+}

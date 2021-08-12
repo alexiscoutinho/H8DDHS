@@ -1,0 +1,14 @@
+AddonInfo
+{
+	addonSteamAppID		550
+	addonTitle			"Hard Eight Death's Door Headshot!"
+	addonVersion		1.0
+	addonAuthor			"Jack Bauer ︻デ▬—"
+	addonAuthorSteamID	76561198046359406
+	addonSteamGroupName	Flemis
+	addonURL0			
+	addonContent_Script	1
+	addonDescription	"Hard Eight now with Death's Door and Headshot! features and Realism (optional).
+
+These mutations were put together aiming to be as authentic as possible to the original ones."
+}

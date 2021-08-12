@@ -1,0 +1,16 @@
+rh8ddhs
+{
+	base		realism
+	maxplayers	4
+
+	DisplayTitle		"Realism Hard Eight Death's Door Headshot!"
+	ShortDescription	"The ultimate Hard Eight experience."
+	Description			"Three of the best mutations and mode now combined for a hellish experience!"
+	Author	"Jack Bauer ︻デ▬—"
+	Image	vgui/rh8ddhs
+
+	convar
+	{
+		survivor_max_incapacitated_count 0
+	}
+}
