@@ -8,7 +8,11 @@ AddonInfo
 	addonSteamGroupName	Flemis
 	addonURL0			""
 	addonContent_Script	1
-	addonDescription	"Hard Eight now with Death's Door and Headshot! features and Realism (optional).
+	addonDescription	"Hard Eight now with Death's Door and Headshot!(+) features and Realism (optional).
 
-These mutations were put together aiming to be as authentic as possible to the original ones."
+The internal mode names for use in the console are h8ddhs, rh8ddhs and rh8ddhs+.
+
+These mutations were put together aiming to be as authentic as possible to the original ones. Headshot!+ is an enhancement to the official mutation which enforces that the headshot-only rules apply to all infected. With it, basic bodyshots on specials deal no damage, incendiary ammo only deals fire damage unless it was a headshot, and commons can't kill each other, for example.
+
+Source: https://github.com/alexiscoutinho/H8DDHS"
 }

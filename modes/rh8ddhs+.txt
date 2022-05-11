@@ -1,0 +1,16 @@
+rh8ddhs+
+{
+	base		realism
+	maxplayers	4
+
+	DisplayTitle		"Realism Hard Eight Death's Door Headshot!+"
+	ShortDescription	"Your demise, now with proper headshots."
+	Description			"Three of the best mutations and mode now truly headshot-only for all infected!"
+	Author				"Jack Bauer ︻デ▬—— and ℜichard"
+	Image				vgui/rh8ddhs+
+
+	convar
+	{
+		survivor_max_incapacitated_count 0
+	}
+}
