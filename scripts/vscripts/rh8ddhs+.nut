@@ -103,6 +103,15 @@ function OnGameEvent_bot_player_replace( params ) {
 	StopSoundOn( "Player.Heartbeat", player )
 }
 
+function OnGameEvent_player_complete_sacrifice( params ) {
+	local player = GetPlayerFromUserID( params.userid )
+	if (!player)
+		return
+
+	NetProps.SetPropInt( player, "m_takedamage", 0 )
+	NetProps.SetPropInt( player, "m_isIncapacitated", 1 )
+}
+
 if (!Director.IsSessionStartMap()) {
 	function PlayerSpawnDeadAfterTransition( userid ) {
 		local player = GetPlayerFromUserID( userid )
